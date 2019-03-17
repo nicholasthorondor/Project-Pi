@@ -1,0 +1,106 @@
+/*Header*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+}
+
+/*Output*/
+.output {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0,123,255);
+}
+
+.output-hr {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.output p {
+    margin-top: 0.7rem;
+}
+
+/*Control display*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+form {
+    width: 80%;
+}
+
+.row {
+    text-align: center;
+}
+
+hr {
+    margin-bottom: 4rem;
+}
+
+.control-name {
+    margin-bottom: 2rem;
+}
+
+input {
+    height: 5rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.sys-control-shutdown {
+    text-align: right;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.sys-control-reboot {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.status {
+    font-weight: bold;
+}
+
+/*Colour wheel*/
+#color-picker-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsiveness adjustments*/
+@media screen and (max-width: 1434px) {
+    .led {
+        min-width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .sys-control-reboot {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sys-control-shutdown {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .led {
+        min-width: 100%;
+    }
+}
